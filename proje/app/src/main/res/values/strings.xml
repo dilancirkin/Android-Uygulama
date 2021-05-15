@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Hangi Aşı Grubundasınız ?</string>
+    <string name="meslekSec">Meslek Seçiniz</string>
+    <string name="yasSec">Yaş Grubunuzu Seçiniz</string>
+    <string-array name="meslekler">
+        <item>Sağlık Çalışanı</item>
+        <item>Tıp Öğrencisi</item>
+        <item>Eczacı</item>
+        <item>Diş Hekimi</item>
+        <item>Diş Hekimliği Öğrencisi</item>
+        <item>Bakım Evi Çalışanı</item>
+        <item>Milli Savunma Bakanlığı</item>
+        <item>İçişleri Bakanlığı</item>
+        <item>Kritik Görevlerde Çalışan</item>
+        <item>Zabıta,Özel Güvenlik</item>
+        <item>Adalet Bakanlığı</item>
+        <item>Ceza Evleri</item>
+        <item>Eğitim Sektörü</item>
+        <item>Gıda Sektörü</item>
+        <item>Taşımacılık Sektörü</item>
+        <item>Diğer</item>
+    </string-array>
+
+    <string-array name="yaslar">
+        <item>85 Yaş Üzeri</item>
+        <item>80-84 Yaş Arası</item>
+        <item>75-79 Yaş Arası</item>
+        <item>70-74 Yaş Arası</item>
+        <item>65-69 Yaş Arası</item>
+        <item>60-64 Yaş Arası</item>
+        <item>55-59 Yaş Arası</item>
+        <item>50-54 Yaş Arası</item>
+        <item>40-49 Yaş Arası</item>
+        <item>30-39 Yaş Arası</item>
+        <item>18-29 Yaş Arası</item>
+        <item>18 Yaş Altı</item>
+
+
+    </string-array>
+
+</resources>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebf6ff"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="225dp"
+        android:layout_height="215dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginRight="94dp">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/btnBaslat"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0c4669"
+        android:layout_below="@+id/image"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="94dp"
+        android:layout_marginLeft="94dp"
+        android:layout_marginTop="-2dp"
+        android:text="BAŞLAT"
+        android:onClick="Play"></Button>
+
+    <Button
+        android:id="@+id/btnDur"
+        android:backgroundTint="#0c4669"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginRight="95dp"
+        android:text="DURDUR"
+        android:onClick="Stop">
+
+    </Button>
+
+    <EditText
+        android:id="@+id/edtIsim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="40dp"
+        android:hint="İsim"></EditText>
+
+    <EditText
+        android:id="@+id/edtSoyisim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtIsim"
+        android:layout_marginTop="-1dp"
+        android:hint="Soyisim"
+        ></EditText>
+
+    <Spinner
+        android:textStyle="bold"
+        android:id="@+id/spMeslekGrubu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtSoyisim"
+        android:layout_marginTop="33dp"
+        android:entries="@array/meslekler"
+        android:prompt="@string/meslekSec"
+        android:spinnerMode="dialog">
+
+    </Spinner>
+
+    <Spinner
+        android:id="@+id/spYasGrubu"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spMeslekGrubu"
+        android:layout_marginTop="22dp"
+        android:entries="@array/yaslar"
+        android:hint="Yaş Grubunuzu Seçiniz"
+        android:prompt="@string/yasSec"
+        android:spinnerMode="dialog"></Spinner>
+
+    <CheckBox
+        android:id="@+id/chcKronik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spYasGrubu"
+        android:layout_marginTop="24dp"
+        android:text="Kronik hastalığınız var mı?">
+
+    </CheckBox>
+
+    <Button
+        android:id="@+id/btnHesapla"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_below="@+id/chcKronik"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="226dp"
+        android:layout_marginLeft="226dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginRight="41dp"
+        android:backgroundTint="#0c4669"
+        android:text="HESAPLA"
+        android:textStyle="bold"
+        android:visibility="visible">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnKaydet"
+        android:layout_width="132dp"
+        android:layout_height="117dp"
+        android:layout_below="@+id/chcKronik"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="237dp"
+        android:layout_marginRight="237dp"
+        android:backgroundTint="#0c4669"
+        android:text="TIKLA ANKETİMİZE KATIL!"
+        android:visibility="visible">
+
+    </Button>
+
+
+</RelativeLayout>
